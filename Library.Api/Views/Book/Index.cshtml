@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Books Index</h2>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Nama</th>
+    </tr>
+
+    @foreach (var book in ViewBag.result)
+    {
+        <tr>
+            <td>@book.BookId</td>
+            <td>@book.Title</td>
+        </tr>
+    }
+
+</table>
